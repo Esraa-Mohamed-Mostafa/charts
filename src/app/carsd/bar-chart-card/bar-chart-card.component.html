@@ -1,0 +1,19 @@
+<nz-card style="
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  " [nzCover]="coverTemplate">
+  <nz-card-meta nzTitle="Bar chart card" nzDescription="Bar chart description"
+    [nzAvatar]="avatarTemplate"></nz-card-meta>
+</nz-card>
+<ng-template #avatarTemplate>
+  <nz-avatar
+    nzSrc="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX///8AAAD0fmDDNzf4smrhW2SlpaX6+vowMDCGhob718/zdlX0eVn4sqP79fXHTU2/Ghr/+vf4rFz4uHjsoaXgVF7gT1n1ztDzc1DRc3PCMDD7z6j4sGTqk5nNXV3tpqr2lHz5v4QgICCioqLIyMjza0TUgIDNZ2e9DQ3706/yvsH43N7fR1L83Nb1jnX5vrL5xI8dY/2gAAABfUlEQVR4nO3cV04DMRRAUXonIZCE3kLv7H91SCCkEejBQMbJ2DpnAX6+f/6wPTMDAAAAAAAAAABQtqWKi8tp7yaF0WzF6rR3k8KKwuwpzJ/C/CnM36QKe5FOL93QdxMqXLvaC1xtJhv6YVKF63OBDYXjUtgQhQkpbIjChBQ2RGFCChuiMCGFDVGYkMKGKEzoh8Lr/chN569j2lnYPYjcFlM4H9hS+I3ChBQqrElhQgonWtg7DN0VUrh9FNkppXAholChQoUKFSpUqFChQoUKFSpUOGbh/XHooYzC/nAQeNwtpHCwGBgqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFChUqVKhQoUKFChUqLKywzv80NW/Q7kWF61N8y31zEulWCnf7p4F+5Rb00/NZ5KVSuHMeeU1RWAiF+VOYP4X5U5g/hfn7Urickf8UZmVUfOGKQoWtp1Bh+ylU2H4KP41+X6ql6p5Ll/JVsxAAAAAAAAAAACBXb4JG78fSaRH0AAAAAElFTkSuQmCC"></nz-avatar>
+</ng-template>
+<ng-template #coverTemplate>
+  <!-- <img
+    alt="example"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ34rPAgOcvX86cO7hvNiGDCwmluCZsq9PdCQ&usqp=CAU"
+  /> -->
+  <app-bar-chart></app-bar-chart>
+</ng-template>
